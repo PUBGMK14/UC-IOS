@@ -7,11 +7,11 @@ function findBestUC() {
 
     let packages = [
         { price: 1100, uc: 60, bonus: 0 },
-        { price: 3300, uc: 180, bonus: 10 },
-        { price: 11000, uc: 600, bonus: 60 },
-        { price: 27500, uc: 1500, bonus: 300 },
-        { price: 55000, uc: 2950, bonus: 900 },
-        { price: 110000, uc: 5900, bonus: 2200 }
+        { price: 4400, uc: 180, bonus: 10 },
+        { price: 14000, uc: 600, bonus: 60 },
+        { price: 33000, uc: 1500, bonus: 300 },
+        { price: 66000, uc: 2950, bonus: 900 },
+        { price: 149000, uc: 5900, bonus: 2200 }
     ];
 
     // UC 합산
@@ -64,3 +64,4 @@ function findBestUC() {
     resultText += "</ul>";
     document.getElementById("result").innerHTML = resultText;
 }
+
