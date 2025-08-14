@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>UC 최저가 계산기</h2>
-    <div class="calculator">
-        <label>필요한 UC 입력:</label>
-        <input type="number" id="ucInput" min="1" placeholder="예: 12000">
-        <button onclick="findBestUC()">계산</button>
-        <div id="result"></div>
-        <div class="version">v2.1</div>
+    <div class="container">
+        <h1 class="title">UC 최저가 계산기</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="ucInput">필요한 UC를 입력하세요</label>
+                <input 
+                    type="number" 
+                    id="ucInput" 
+                    min="1" 
+                    placeholder="예: 12000"
+                    onkeypress="handleEnterKey(event)"
+                >
+            </div>
+            <button onclick="findBestUC()" id="calculateBtn">계산하기</button>
+            <div id="result" class="result"></div>
+        </div>
     </div>
+    <div class="version">v1.0.0</div>
     <script src="script.js"></script>
 </body>
-
 </html>
-
