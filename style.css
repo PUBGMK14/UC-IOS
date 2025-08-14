@@ -209,6 +209,63 @@ button:active {
     }
 }
 
+/* 태블릿 가로 모드 */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        max-width: 600px;
+    }
+    
+    .title {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    
+    .calculator {
+        padding: 40px;
+    }
+    
+    input {
+        padding: 18px 25px;
+        font-size: 1.2rem;
+    }
+    
+    button {
+        padding: 18px;
+        font-size: 1.2rem;
+    }
+}
+
+/* 태블릿 세로 모드 */
+@media (max-width: 768px) and (min-width: 481px) {
+    .container {
+        max-width: 550px;
+    }
+    
+    .title {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .calculator {
+        padding: 35px;
+    }
+    
+    input {
+        padding: 16px 22px;
+        font-size: 1.15rem;
+    }
+    
+    button {
+        padding: 16px;
+        font-size: 1.15rem;
+    }
+    
+    .price-highlight {
+        font-size: 2rem;
+    }
+}
+
+/* 모바일 */
 @media (max-width: 480px) {
     .title {
         font-size: 1.8rem;
@@ -217,5 +274,25 @@ button:active {
     
     .calculator {
         padding: 20px;
+    }
+    
+    input {
+        padding: 14px 18px;
+        font-size: 1rem;
+    }
+    
+    button {
+        padding: 14px;
+        font-size: 1rem;
+    }
+    
+    .price-highlight {
+        font-size: 1.6rem;
+    }
+    
+    .version {
+        font-size: 11px;
+        bottom: 8px;
+        right: 12px;
     }
 }
